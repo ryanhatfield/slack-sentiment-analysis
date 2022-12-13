@@ -1,2 +1,6 @@
 tasks:
-  - init: pip3 install -r requirements.txt
+  - init: conda install -n base -c conda-forge mamba
+  - init: conda config --add channels conda-forge
+  - init: mamba update -n base mamba
+  - init: mamba env create --file environment.yml
+  #mamba activate slack-sentiment
