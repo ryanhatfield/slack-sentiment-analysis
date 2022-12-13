@@ -1,0 +1,3 @@
+tasks:
+  - name: Pipenv
+    init: pipenv install
